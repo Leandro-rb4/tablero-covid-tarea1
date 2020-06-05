@@ -150,11 +150,11 @@ qpal <- colorQuantile("Oranges", covid19_cr$confirmados, n = 7, na.color = "whit
                 fillColor = ~qpal(confirmados),
                 weight = 2,
                 opacity = 1,
-                color = "white",
+                color = "black",
                 dashArray = "3",
                 fillOpacity = 0.7,
 popup = paste( "Cantón:", covid19_cr$canton, "Confirmados:", covid19_cr$confirmados, "Recuperados:", covid19_cr$recuperados, "Activos:", covid19_cr$activos, "Muertes:", covid19_cr$muertes, sep = '<br/>'), highlight = highlightOptions(
-    weight = 3,
+    weight = 2,
     color = "#666",
     dashArray = "",
     fillOpacity = 0.7,
